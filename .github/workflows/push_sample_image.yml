@@ -23,6 +23,6 @@ jobs:
             password: ${{ secrets.REGISTRY_PASSWORD }} 
             
         - run: |
-            docker pull nginx:latest
+            docker pull nginx:latest 
             docker tag nginx:latest ${{ env.CONTAINER_REGISTRY_NAME }}.azurecr.io/sample_image:v1
             docker push ${{ env.CONTAINER_REGISTRY_NAME }}.azurecr.io/sample_image:v1 
