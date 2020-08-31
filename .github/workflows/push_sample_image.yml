@@ -24,5 +24,5 @@ jobs:
             
         - run: |
             docker pull nginx:latest 
-            docker tag nginx:latest ${{ env.CONTAINER_REGISTRY_NAME }}.azurecr.io/sample_image:v1
-            docker push ${{ env.CONTAINER_REGISTRY_NAME }}.azurecr.io/sample_image:v1 
+            docker tag nginx:latest ${{ env.CONTAINER_REGISTRY_NAME }}.azurecr.io/sample_imageq:v1
+            docker push ${{ env.CONTAINER_REGISTRY_NAME }}.azurecr.io/sample_imageq:v1 
